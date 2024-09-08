@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">เข้าสู่ระบบ</button>
+            <!-- ปรับปรุงปุ่มสมัครสมาชิก -->
+            <button type="button" onclick="f_tosignup()">สมัครสมาชิก</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

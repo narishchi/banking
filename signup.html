@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>สมัครสมาชิก</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="num">เบอร์โทร:</label>
+                <input type="text" id="num" name="num" required>
+            </div>
+            <!-- ปุ่มสมัครสมาชิก -->
+            <button type="button" onClick="f_signup()">สมัครสมาชิก</button>
+            <button type="button" onClick="f_back()">กลับ</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
